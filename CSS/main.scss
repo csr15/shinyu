@@ -1,0 +1,886 @@
+/*
+    website: Shinyu
+    Author: Shinyu
+    Developer: Ragul CS
+    contact: ragulcs15@gmail.com
+    Version: 0.0.1
+*/
+
+//Fonts
+$IBM: "IBM Plex Serif", serif;
+$poly: "Poly", serif;
+$sans: "Source Sans Pro", sans-serif;
+
+//Colors
+$pri: #c7ad87;
+$text: #47433b;
+$light-white: #fdfcfb;
+$light-blue: #fbfcfc;
+$footer: #f7fafb;
+$white: #ffffff;
+$black: #000000;
+$border: #b3b3b3;
+$carousel: #e1e8eb;
+$carousel-active: #accbd7;
+
+//Predefine
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+}
+
+//HEADER
+header {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/header.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  color: $white;
+  text-align: center;
+  padding-bottom: 20px;
+
+  h1 {
+    font-size: 118px;
+    font-family: $sans;
+    text-transform: lowercase;
+    font-weight: 300;
+    letter-spacing: 7px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-family: $sans;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}
+
+//INTRO APPS
+.apps {
+  padding: 10rem 0 10rem 0;
+
+  .col-md-5 {
+    width: 100%;
+    @extend .center;
+
+    img {
+      width: 400px;
+      max-width: 700px;
+      margin: auto -100px auto;
+    }
+  }
+  .spacer {
+    height: 200px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      background: $pri;
+      width: 2px;
+      height: inherit;
+    }
+  }
+
+  .apps-bottom {
+    @extend .center;
+  }
+
+  p {
+    font-family: $IBM;
+    font-size: 24px;
+    margin-right: auto;
+  }
+
+  .col-md-12 {
+    margin-top: 120px;
+
+    img {
+      width: 150px;
+      margin: auto 10px;
+    }
+  }
+}
+
+//ARTICLES
+.articles {
+  .col-md-6 {
+    img {
+      width: 80%;
+    }
+    color: $text;
+
+    h2 {
+      font-size: 24px;
+      font-family: $IBM;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-family: $IBM;
+      font-weight: 700;
+      margin: 30px 0;
+    }
+
+    p {
+      font-family: $IBM;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+
+  .article-1 {
+    background: $light-white;
+    @extend .center;
+    padding: 0 10px;
+    padding: 5rem 0;
+  }
+
+  .article-2 {
+    background: $light-blue;
+    @extend .center;
+    padding: 0 10px;
+    padding: 5rem 0;
+  }
+}
+
+//CONNECTING
+.connecting {
+  padding: 5rem 0;
+  color: $text;
+
+  h2 {
+    font-family: $IBM;
+    font-size: 32px;
+    margin-bottom: 50px;
+    line-height: 50px;
+  }
+
+  .col-md-4 {
+    .connecting-card {
+      width: 100%;
+      padding: 10px 40px;
+
+      h2 {
+        font-family: $IBM;
+        font-weight: bold;
+        margin: 30px auto 10px auto;
+      }
+
+      p {
+        font-family: $IBM;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+//CONNECTING CAROUSEL
+.carousel {
+  padding-bottom: 5rem;
+  display: none;
+
+  .connecting-card {
+    width: 80%;
+    margin: auto;
+    padding: 10px 40px;
+
+    img {
+      width: 150px;
+      margin: 20px auto;
+    }
+
+    h2 {
+      font-family: $IBM;
+      font-weight: bold;
+      margin: 30px auto 10px auto;
+    }
+
+    p {
+      font-family: $IBM;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: 30px;
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      margin: auto 5px;
+      background-color: $carousel;
+    }
+
+    .active {
+      background: $carousel-active;
+    }
+  }
+}
+
+//CATEGORIES
+.categories {
+  padding: 5rem 0;
+  color: $text;
+  font-family: $IBM;
+  background: $light-white;
+
+  .col-md-6 {
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 55px;
+      text-align: left;
+    }
+
+    .category-card {
+      margin: 25px 0;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .categories-title {
+    @extend .center;
+  }
+}
+
+//WALKED
+.walked {
+  padding: 5rem 0;
+  color: $text;
+  font-family: $IBM;
+
+  .row {
+    flex-wrap: wrap-reverse;
+  }
+
+  .col-md-6 {
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-family: $IBM;
+      font-size: 20px;
+      line-height: 35px;
+
+      span {
+        font-style: italic;
+      }
+    }
+    img {
+      width: 80%;
+    }
+  }
+}
+
+//VETTING
+.vetting {
+  font-family: $IBM;
+  background: $light-white;
+  padding: 10rem 0;
+  color: $text;
+  overflow: hidden;
+
+  .wrapper {
+    @extend .center;
+  }
+
+  .mobile-wrapper {
+    display: none;
+    justify-content: center;
+  }
+
+  h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  p {
+    margin: auto 50px;
+    font-size: 20px;
+    line-height: 35px;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  img {
+    width: 300px;
+    margin: 50px auto 0 auto;
+  }
+}
+
+//BANNER
+.banner {
+  height: 80vh;
+  max-height: 800px;
+  min-height: 500px;
+  background: url("../assets/images/article-section-4.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+
+  h3 {
+    font-family: $IBM;
+    color: $white;
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+//WALK THROUGH
+.walk-through {
+  padding: 5rem 0;
+  color: $text;
+  font-family: $IBM;
+
+  .col-md-6 {
+    h1 {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $IBM;
+      font-size: 20px;
+      line-height: 35px;
+
+      span {
+        font-style: italic;
+      }
+    }
+    img {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+.bridge-banner {
+  height: 80vh;
+  max-height: 800px;
+  min-height: 500px;
+  background: url("../assets/images/mid-level-banner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 60px;
+  color: $white;
+
+  h3 {
+    font-family: $IBM;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  p {
+    font-family: $IBM;
+    font-size: 20px;
+    line-height: 35px;
+    width: 50%;
+  }
+}
+
+.intro {
+  position: relative;
+  padding: 10rem 0;
+  color: $text;
+  font-family: $IBM;
+  overflow: hidden;
+
+  .col-md-5 {
+    overflow: hidden;
+    img {
+      width: 300px;
+    }
+  }
+
+  .col-md-7 {
+    h2 {
+      font-size: 22px;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      margin: 40px 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 35px;
+      font-family: $IBM;
+    }
+  }
+}
+
+.bottom-banner {
+  padding: 5rem 0;
+
+  img {
+    width: 600px;
+  }
+
+  h2 {
+    font-family: $IBM;
+    margin: 20px auto 40px auto;
+    color: $text;
+  }
+
+  .apps {
+    padding: 0;
+    @extend .center;
+
+    img {
+      width: 150px !important;
+      margin: 10px;
+    }
+  }
+}
+
+footer {
+  padding: 5rem 0;
+  color: $text;
+  background: $light-blue;
+
+  h2 {
+    font-family: $IBM;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin: 20px auto;
+  }
+
+  label {
+    font-family: $IBM;
+    font-size: 18px;
+  }
+
+  .form-control {
+    border-color: $border;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    outline: none !important;
+    padding: 0.5rem;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+  }
+}
+
+//Media Query for responsivenes
+@media (max-width: 1200px) {
+  .apps {
+    p {
+      font-size: 20px;
+    }
+  }
+  .articles {
+    .col-md-6 {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+  .connecting {
+    h2 {
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    .col-md-4 {
+      .connecting-card {
+        p {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .categories {
+    .col-md-6 {
+      .category-card {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+  .walked {
+    .col-md-6 {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+  .vetting {
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .walk-through {
+    .col-md-6 {
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+  .bridge-banner {
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .banner {
+    padding: 0 2rem 5rem;
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .intro {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .bottom-banner {
+    img {
+      width: 400px;
+    }
+  }
+  footer {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .apps {
+    .col-md-5 {
+      img {
+        width: 300px;
+      }
+    }
+  }
+
+  .connecting {
+    .col-md-4 {
+      .connecting-card {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  // .intro {
+  //   .col-md-5 {
+  //   }
+  // }
+}
+
+@media (max-width: 768px) {
+  .apps {
+    padding: 10rem 0 10rem;
+    .spacer {
+      display: none;
+    }
+
+    .col-md-5 {
+      img {
+        margin-bottom: 70px;
+        width: 80%;
+      }
+    }
+
+    .col-md-12 {
+      margin-top: 80px;
+    }
+
+    .apps-bottom {
+      flex-wrap: wrap !important;
+
+      img {
+        margin: 10px 100px;
+      }
+    }
+
+    p {
+      margin: auto;
+    }
+  }
+
+  .articles {
+    .col-md-6 {
+      img {
+        width: 100%;
+      }
+      h2 {
+        margin-top: 50px;
+      }
+      h1 {
+        font-size: 36px;
+      }
+    }
+
+    .article-1 {
+      padding: 3rem 0;
+    }
+
+    .article-2 {
+      .row {
+        flex-wrap: wrap-reverse;
+      }
+    }
+  }
+
+  .connecting {
+    padding-bottom: 0;
+    .col-md-4 {
+      .connecting-card {
+        display: none;
+      }
+    }
+  }
+
+  .carousel {
+    display: block;
+  }
+
+  .categories {
+    padding: 7rem 0;
+
+    .col-md-6 {
+      justify-content: flex-start;
+
+      h1 {
+        margin-bottom: 30px;
+        font-size: 36px;
+      }
+
+      .category-card {
+        margin-bottom: 40px;
+
+        h1 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .walked {
+    .col-md-6 {
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-top: 30px;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .vetting {
+    padding: 5rem 0 7rem 0;
+
+    .wrapper {
+      display: none;
+    }
+
+    .mobile-wrapper {
+      display: flex;
+    }
+    p {
+      margin: 10px 50px;
+    }
+
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  .walk-through {
+    padding: 5rem 0;
+    .col-md-6 {
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin-top: 20px;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .bridge-banner {
+    text-align: center;
+    padding: 50px 10px;
+    background-position-x: 70%;
+
+    h3 {
+      font-size: 36px;
+    }
+
+    p {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  .intro {
+    padding: 5rem 0;
+    .col-md-5 {
+      img {
+        width: 200px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .col-md-7 {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .bottom-banner {
+    padding: 5rem 0;
+
+    .apps {
+      flex-wrap: wrap !important;
+      justify-content: center;
+      padding: 3rem 5rem;
+
+      img {
+        margin: 10px 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  header {
+    h1 {
+      font-size: 80px;
+    }
+  }
+  .apps {
+    .col-md-5 {
+      img {
+        width: 90%;
+      }
+    }
+  }
+  .categories {
+    padding: 5rem 0;
+  }
+
+  .bottom-banner {
+    padding: 3rem 0;
+  }
+  .bridge-banner {
+    h3 {
+      font-size: 32px;
+    }
+  }
+  .bottom-banner {
+    width: 400px;
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .apps {
+    padding: 5rem 0;
+  }
+}
