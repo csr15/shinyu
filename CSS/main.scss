@@ -3,7 +3,7 @@
     Author: Shinyu
     Developer: Ragul CS
     contact: ragulcs15@gmail.com
-    Version: 0.0.1
+    Version: 0.0.2
 */
 
 //Fonts
@@ -22,8 +22,9 @@ $black: #000000;
 $border: #b3b3b3;
 $carousel: #e1e8eb;
 $carousel-active: #accbd7;
+$categories: #fffdf8;
 
-//Predefine
+// Predefine
 html,
 body {
   overflow-x: hidden;
@@ -36,10 +37,21 @@ body {
   padding: 0;
 }
 
+p {
+  font-family: $IBM;
+  font-size: 20px;
+  line-height: 35px;
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.view-height {
+  height: 100vh;
+  min-height: 600px;
 }
 
 img {
@@ -54,10 +66,12 @@ header {
     url("../assets/images/header.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 00%;
   min-height: 500px;
   color: $white;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 
   h1 {
     font-size: 118px;
@@ -79,7 +93,8 @@ header {
 
 //INTRO APPS
 .apps {
-  padding: 10rem 0 10rem 0;
+  @extend .view-height;
+  @extend .center;
 
   .col-md-5 {
     width: 100%;
@@ -115,7 +130,7 @@ header {
     @extend .center;
   }
 
-  p {
+  h4 {
     font-family: $IBM;
     font-size: 24px;
     margin-right: auto;
@@ -135,49 +150,43 @@ header {
 .articles {
   .col-md-6 {
     img {
-      width: 80%;
+      width: 100%;
     }
     color: $text;
 
     h2 {
-      font-size: 24px;
+      font-size: 22px;
       font-family: $IBM;
       font-weight: 400;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 28px;
       font-family: $IBM;
       font-weight: 700;
       margin: 30px 0;
-    }
-
-    p {
-      font-family: $IBM;
-      font-size: 20px;
-      line-height: 35px;
     }
   }
 
   .article-1 {
     background: $light-white;
     @extend .center;
-    padding: 0 10px;
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .article-2 {
     background: $light-blue;
     @extend .center;
-    padding: 0 10px;
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 }
 
 //CONNECTING
 .connecting {
-  padding: 5rem 0;
   color: $text;
+  @extend .view-height;
+  @extend .center;
+  flex-direction: column;
 
   h2 {
     font-family: $IBM;
@@ -198,10 +207,7 @@ header {
       }
 
       p {
-        font-family: $IBM;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
       }
     }
   }
@@ -229,8 +235,6 @@ header {
     }
 
     p {
-      font-family: $IBM;
-      font-weight: 400;
       font-size: 16px;
     }
   }
@@ -257,10 +261,13 @@ header {
 
 //CATEGORIES
 .categories {
-  padding: 5rem 0;
+  @extend .view-height;
+  @extend .center;
+  height: auto;
+  padding: 5vh 0;
   color: $text;
   font-family: $IBM;
-  background: $light-white;
+  background: $categories;
 
   .col-md-6 {
     h1 {
@@ -276,11 +283,6 @@ header {
       h1 {
         font-size: 32px;
       }
-
-      p {
-        font-size: 20px;
-        line-height: 35px;
-      }
     }
   }
 
@@ -291,9 +293,10 @@ header {
 
 //WALKED
 .walked {
-  padding: 5rem 0;
+  @extend .view-height;
   color: $text;
   font-family: $IBM;
+  @extend .center;
 
   .row {
     flex-wrap: wrap-reverse;
@@ -307,10 +310,6 @@ header {
     }
 
     p {
-      font-family: $IBM;
-      font-size: 20px;
-      line-height: 35px;
-
       span {
         font-style: italic;
       }
@@ -325,9 +324,11 @@ header {
 .vetting {
   font-family: $IBM;
   background: $light-white;
-  padding: 10rem 0;
+  @extend .view-height;
   color: $text;
   overflow: hidden;
+  @extend .center;
+  background: $categories;
 
   .wrapper {
     @extend .center;
@@ -342,12 +343,11 @@ header {
     font-weight: 700;
     margin-bottom: 50px;
     text-align: center;
+    font-size: 28px;
   }
 
   p {
     margin: auto 50px;
-    font-size: 20px;
-    line-height: 35px;
 
     span {
       font-style: italic;
@@ -356,15 +356,13 @@ header {
 
   img {
     width: 300px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 50px auto;
   }
 }
 
 //BANNER
 .banner {
-  height: 80vh;
-  max-height: 800px;
-  min-height: 500px;
+  @extend .view-height;
   background: url("../assets/images/article-section-4.png");
   background-size: cover;
   background-position: center;
@@ -373,16 +371,16 @@ header {
   h3 {
     font-family: $IBM;
     color: $white;
-    font-size: 36px;
-    line-height: 50px;
   }
 }
 
 //WALK THROUGH
 .walk-through {
-  padding: 5rem 0;
+  @extend .view-height;
   color: $text;
   font-family: $IBM;
+  @extend .center;
+  background: $light-blue;
 
   .col-md-6 {
     h1 {
@@ -392,10 +390,6 @@ header {
     }
 
     p {
-      font-family: $IBM;
-      font-size: 20px;
-      line-height: 35px;
-
       span {
         font-style: italic;
       }
@@ -408,9 +402,7 @@ header {
 }
 
 .bridge-banner {
-  height: 80vh;
-  max-height: 800px;
-  min-height: 500px;
+  @extend .view-height;
   background: url("../assets/images/mid-level-banner.png");
   background-size: cover;
   background-position: center;
@@ -421,28 +413,26 @@ header {
     font-family: $IBM;
     font-style: italic;
     font-size: 36px;
-    line-height: 50px;
   }
 
   p {
-    font-family: $IBM;
-    font-size: 20px;
-    line-height: 35px;
     width: 50%;
   }
 }
 
 .intro {
   position: relative;
-  padding: 10rem 0;
+  @extend .view-height;
+  @extend .center;
+  overflow-x: hidden;
   color: $text;
   font-family: $IBM;
-  overflow: hidden;
+  background: $light-white;
 
   .col-md-5 {
     overflow: hidden;
     img {
-      width: 300px;
+      width: 60%;
     }
   }
 
@@ -453,23 +443,19 @@ header {
 
     h1 {
       font-weight: 700;
-      font-size: 32px;
+      font-size: 28px;
       margin: 40px 0;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 35px;
-      font-family: $IBM;
     }
   }
 }
 
 .bottom-banner {
-  padding: 5rem 0;
+  @extend .view-height;
+  @extend .center;
+  flex-direction: column;
 
   img {
-    width: 600px;
+    width: 400px;
   }
 
   h2 {
@@ -478,10 +464,7 @@ header {
     color: $text;
   }
 
-  .apps {
-    padding: 0;
-    @extend .center;
-
+  .row {
     img {
       width: 150px !important;
       margin: 10px;
@@ -496,7 +479,7 @@ footer {
 
   h2 {
     font-family: $IBM;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 30px;
   }
@@ -539,19 +522,14 @@ footer {
 
 //Media Query for responsivenes
 @media (max-width: 1200px) {
-  .apps {
-    p {
-      font-size: 20px;
-    }
+  p {
+    font-size: 20px;
+    line-height: 30px;
   }
   .articles {
     .col-md-6 {
       h2 {
         font-size: 22px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 30px;
       }
     }
   }
@@ -559,15 +537,6 @@ footer {
     h2 {
       font-size: 28px;
       line-height: 35px;
-    }
-
-    .col-md-4 {
-      .connecting-card {
-        p {
-          font-size: 16px;
-          line-height: 30px;
-        }
-      }
     }
   }
   .categories {
@@ -583,52 +552,11 @@ footer {
       h2 {
         font-size: 28px;
       }
-      p {
-        font-size: 18px;
-        line-height: 30px;
-      }
-    }
-  }
-  .vetting {
-    p {
-      font-size: 18px;
-      line-height: 30px;
-    }
-  }
-  .walk-through {
-    .col-md-6 {
-      p {
-        font-size: 18px;
-        line-height: 30px;
-      }
-    }
-  }
-  .bridge-banner {
-    p {
-      font-size: 18px;
-      line-height: 30px;
-    }
-  }
-  .banner {
-    padding: 0 2rem 5rem;
-    h3 {
-      font-size: 32px;
-      line-height: 40px;
     }
   }
   .intro {
     font-size: 18px;
     line-height: 30px;
-  }
-  .bottom-banner {
-    img {
-      width: 400px;
-    }
-  }
-  footer {
-    h2 {
-      font-size: 28px;
-    }
   }
 }
 @media (max-width: 991px) {
@@ -648,15 +576,17 @@ footer {
     }
   }
 
-  // .intro {
-  //   .col-md-5 {
-  //   }
-  // }
+  .intro {
+    .col-md-5 {
+      img{
+        width: 70%;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .apps {
-    padding: 10rem 0 10rem;
     .spacer {
       display: none;
     }
@@ -723,8 +653,7 @@ footer {
   }
 
   .categories {
-    padding: 7rem 0;
-
+    margin-top: 60px;
     .col-md-6 {
       justify-content: flex-start;
 
@@ -745,6 +674,8 @@ footer {
   }
 
   .walked {
+    height: auto;
+    padding: 5vh 0;
     .col-md-6 {
       img {
         width: 100%;
@@ -759,8 +690,6 @@ footer {
   }
 
   .vetting {
-    padding: 5rem 0 7rem 0;
-
     .wrapper {
       display: none;
     }
@@ -779,7 +708,8 @@ footer {
   }
 
   .walk-through {
-    padding: 5rem 0;
+    padding: 5vh 0;
+    height: auto;
     .col-md-6 {
       img {
         width: 100%;
@@ -809,11 +739,12 @@ footer {
   }
 
   .intro {
-    padding: 5rem 0;
+    height: auto;
+    padding: 2rem 0;
     .col-md-5 {
       img {
-        width: 200px;
-        margin-bottom: 40px;
+        width: 40%;
+        margin-bottom: 50px;
       }
     }
 
@@ -825,7 +756,6 @@ footer {
   }
 
   .bottom-banner {
-    padding: 5rem 0;
 
     .apps {
       flex-wrap: wrap !important;
@@ -853,20 +783,9 @@ footer {
       }
     }
   }
-  .categories {
-    padding: 5rem 0;
-  }
 
   .bottom-banner {
     padding: 3rem 0;
-  }
-  .bridge-banner {
-    h3 {
-      font-size: 32px;
-    }
-  }
-  .bottom-banner {
-    width: 400px;
   }
 }
 
@@ -879,8 +798,5 @@ footer {
     h2 {
       font-size: 32px;
     }
-  }
-  .apps {
-    padding: 5rem 0;
   }
 }
