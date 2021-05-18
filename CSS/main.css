@@ -78,6 +78,7 @@ header h2 {
 
 .apps .col-md-5 {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .apps .col-md-5 img {

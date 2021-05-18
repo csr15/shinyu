@@ -33,7 +33,7 @@
     app -->
 
     <header class="header d-flex justify-content-center align-items-end">
-        <div class="d-flex- flex-column">
+        <div class="d-flex- flex-column header-content">
             <h1>shinyu</h1>
             <h2>Redefining pet-care</h2>
         </div>
@@ -110,21 +110,21 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="connecting-card">
-                    <img src="./assets/images/request.svg" alt="">
+                    <img src="./assets/images/request.svg" id="img1" alt="">
                     <h2>Request</h2>
                     <p>Tell us who, when, and where. Right this minute, or next Tuesday afternoon.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="connecting-card">
-                    <img src="./assets/images/book.svg" alt="">
+                    <img src="./assets/images/book.svg" id="img2" alt="">
                     <h2>Book</h2>
                     <p>Tell us who, when, and where. Right this minute, or next Tuesday afternoon.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="connecting-card">
-                    <img src="./assets/images/follow-along.svg" alt="">
+                    <img src="./assets/images/follow-along.svg" id="img3" alt="">
                     <h2>Follow Along</h2>
                     <p>Join the walk each step of the way, & check-in live from a new perspective with Shinyu View.</p>
                 </div>
@@ -284,7 +284,7 @@
     </div>
 
     <div class="bottom-banner text-center">
-        <img src="./assets/images/article-section-5.png" alt="">
+        <img src="./assets/images/article-section-5.png" id="bottomBannerImg" alt="">
         <h2>You get to know.</h2>
         <div class="row">
             <div class="col-md-6">
@@ -329,7 +329,8 @@
     </footer>
 
     <!--Custom JS-->
-    <script src="./JS/index.js"></script>
+    <script defer src="./JS/index.js"></script>
+
     <!--
         Bootstrap JS CDN
     -->
@@ -343,6 +344,13 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+    <!-- 
+        GSAp CDN
+    -->
+    <!-- ==GSAP== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 </body>
 
 </html>

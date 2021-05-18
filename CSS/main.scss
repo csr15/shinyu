@@ -99,6 +99,7 @@ header {
   .col-md-5 {
     width: 100%;
     @extend .center;
+    overflow-x: hidden;
 
     img {
       width: 400px;
@@ -578,7 +579,7 @@ footer {
 
   .intro {
     .col-md-5 {
-      img{
+      img {
         width: 70%;
       }
     }
@@ -756,7 +757,6 @@ footer {
   }
 
   .bottom-banner {
-
     .apps {
       flex-wrap: wrap !important;
       justify-content: center;
