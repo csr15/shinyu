@@ -72,7 +72,7 @@ header h1 {
 header h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 75px;
   letter-spacing: 3px;
 }
 
@@ -127,20 +127,25 @@ header h2 {
 }
 
 .articles .col-md-6 img {
-  width: 100%;
+  width: 450px;
 }
 
 .articles .col-md-6 h2 {
-  font-size: 22px;
+  font-size: 28px;
   font-family: "IBM Plex Serif", serif;
   font-weight: 400;
 }
 
 .articles .col-md-6 h1 {
-  font-size: 28px;
+  font-size: 50px;
   font-family: "IBM Plex Serif", serif;
   font-weight: 700;
   margin: 30px 0;
+}
+
+.articles .col-md-6 p {
+  font-size: 28px;
+  line-height: 40px;
 }
 
 .articles .article-1 {
@@ -486,7 +491,23 @@ footer textarea {
 }
 
 @media (max-width: 991px) {
+  .header h2 {
+    font-size: 50px;
+  }
   .apps .col-md-5 img {
+    width: 300px;
+  }
+  .articles .col-md-6 h1 {
+    font-size: 40px;
+  }
+  .articles .col-md-6 h2 {
+    font-size: 22px;
+  }
+  .articles .col-md-6 p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .articles .col-md-6 img {
     width: 300px;
   }
   .connecting .col-md-4 .connecting-card {
