@@ -108,7 +108,7 @@ header {
     }
   }
   .spacer {
-    height: 200px;
+    height: 300px;
     position: relative;
 
     &::after {
@@ -133,7 +133,7 @@ header {
 
   h4 {
     font-family: $IBM;
-    font-size: 24px;
+    font-size: 38px;
     margin-right: auto;
   }
 
@@ -196,9 +196,9 @@ header {
 
   h2 {
     font-family: $IBM;
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
 
   .col-md-4 {
@@ -278,16 +278,21 @@ header {
   .col-md-6 {
     h1 {
       font-weight: 700;
-      font-size: 40px;
+      font-size: 50px;
       line-height: 55px;
       text-align: left;
     }
 
     .category-card {
-      margin: 25px 0;
+      margin: 35px 0;
 
       h1 {
-        font-size: 32px;
+        font-size: 45px;
+      }
+
+      p {
+        font-size: 28px;
+        line-height: 40px;
       }
     }
   }
@@ -311,17 +316,19 @@ header {
   .col-md-6 {
     h2 {
       font-weight: 700;
-      font-size: 32px;
+      font-size: 50px;
       margin-bottom: 30px;
     }
 
     p {
+      font-size: 28px;
+      line-height: 40px;
       span {
         font-style: italic;
       }
     }
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 }
@@ -349,11 +356,13 @@ header {
     font-weight: 700;
     margin-bottom: 50px;
     text-align: center;
-    font-size: 28px;
+    font-size: 50px;
   }
 
   p {
     margin: auto 50px;
+    font-size: 28px;
+    line-height: 40px;
 
     span {
       font-style: italic;
@@ -377,6 +386,7 @@ header {
   h3 {
     font-family: $IBM;
     color: $white;
+    font-size: 50px;
   }
 }
 
@@ -391,17 +401,19 @@ header {
   .col-md-6 {
     h1 {
       font-weight: 700;
-      font-size: 28px;
+      font-size: 50px;
       margin-bottom: 20px;
     }
 
     p {
+      font-size: 28px;
+      line-height: 40px;
       span {
         font-style: italic;
       }
     }
     img {
-      width: 80%;
+      width: 100%;
       margin: auto;
     }
   }
@@ -418,11 +430,13 @@ header {
   h3 {
     font-family: $IBM;
     font-style: italic;
-    font-size: 36px;
+    font-size: 50px;
   }
 
   p {
     width: 50%;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 
@@ -444,13 +458,18 @@ header {
 
   .col-md-7 {
     h2 {
-      font-size: 22px;
+      font-size: 28px;
     }
 
     h1 {
       font-weight: 700;
-      font-size: 28px;
+      font-size: 50px;
       margin: 40px 0;
+    }
+
+    p {
+      font-size: 28px;
+      line-height: 40px;
     }
   }
 }
@@ -468,6 +487,7 @@ header {
     font-family: $IBM;
     margin: 20px auto 40px auto;
     color: $text;
+    font-size: 50px;
   }
 
   .row {
@@ -485,7 +505,7 @@ footer {
 
   h2 {
     font-family: $IBM;
-    font-size: 22px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 30px;
   }
@@ -496,7 +516,7 @@ footer {
 
   label {
     font-family: $IBM;
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .form-control {
@@ -541,7 +561,7 @@ footer {
   }
   .connecting {
     h2 {
-      font-size: 28px;
+      font-size: 32px;
       line-height: 35px;
     }
   }
@@ -553,21 +573,14 @@ footer {
       }
     }
   }
-  .walked {
-    .col-md-6 {
-      h2 {
-        font-size: 28px;
-      }
-    }
-  }
   .intro {
     font-size: 18px;
     line-height: 30px;
   }
 }
 @media (max-width: 991px) {
-  .header{
-    h2{
+  .header {
+    h2 {
       font-size: 50px;
     }
   }
@@ -576,6 +589,14 @@ footer {
       img {
         width: 300px;
       }
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
+    .spacer {
+      height: 200px;
     }
   }
 
@@ -598,9 +619,67 @@ footer {
   }
 
   .connecting {
+    h2 {
+      font-size: 36px;
+    }
     .col-md-4 {
       .connecting-card {
-        padding: 10px 20px;
+        padding: 10px 0px;
+      }
+    }
+  }
+
+  .categories {
+    .col-md-6 {
+      h1 {
+        font-size: 40px;
+      }
+      .category-card {
+        margin: 25px 0;
+        padding: 10px 0;
+
+        h1 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .walked {
+    .col-md-6 {
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .vetting {
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .walk-through {
+    .col-md-6 {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 30px;
       }
     }
   }
@@ -609,6 +688,51 @@ footer {
     .col-md-5 {
       img {
         width: 70%;
+      }
+    }
+    .col-md- {
+      h2 {
+        font-size: 22px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .bridge-banner {
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+
+  .bottom-banner {
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  .banner {
+    font-size: 36px;
+  }
+
+  footer {
+    h2 {
+      font-size: 22px;
+    }
+
+    .form-control {
+      label {
+        font-size: 18px;
       }
     }
   }
