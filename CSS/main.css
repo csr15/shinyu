@@ -122,30 +122,30 @@ header h2 {
   margin: auto 10px;
 }
 
-.articles .col-md-6 {
+.articles {
   color: #47433b;
 }
 
 .articles .col-md-6 img {
-  width: 450px;
+  width: 100%;
 }
 
 .articles .col-md-6 h2 {
-  font-size: 28px;
+  font-size: 50px;
   font-family: "IBM Plex Serif", serif;
   font-weight: 400;
 }
 
 .articles .col-md-6 h1 {
-  font-size: 50px;
+  font-size: 56px;
   font-family: "IBM Plex Serif", serif;
   font-weight: 700;
   margin: 30px 0;
 }
 
 .articles .col-md-6 p {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 60px;
 }
 
 .articles .article-1 {
@@ -168,7 +168,7 @@ header h2 {
 
 .connecting h2 {
   font-family: "IBM Plex Serif", serif;
-  font-size: 40px;
+  font-size: 47px;
   margin-bottom: 50px;
   line-height: 60px;
 }
@@ -178,14 +178,20 @@ header h2 {
   padding: 10px 40px;
 }
 
+.connecting .col-md-4 .connecting-card img {
+  width: 180px;
+}
+
 .connecting .col-md-4 .connecting-card h2 {
   font-family: "IBM Plex Serif", serif;
   font-weight: bold;
-  margin: 30px auto 10px auto;
+  margin: 40px auto 10px auto;
+  font-size: 56px;
 }
 
 .connecting .col-md-4 .connecting-card p {
   font-weight: 400;
+  font-size: 30px;
 }
 
 .carousel {
@@ -244,8 +250,8 @@ header h2 {
 
 .categories .col-md-6 h1 {
   font-weight: 700;
-  font-size: 50px;
-  line-height: 55px;
+  font-size: 56px;
+  line-height: 60px;
   text-align: left;
 }
 
@@ -254,12 +260,12 @@ header h2 {
 }
 
 .categories .col-md-6 .category-card h1 {
-  font-size: 45px;
+  font-size: 56px;
 }
 
 .categories .col-md-6 .category-card p {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 38px;
+  line-height: 50px;
 }
 
 .walked {
@@ -274,13 +280,13 @@ header h2 {
 
 .walked .col-md-6 h2 {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 56px;
   margin-bottom: 30px;
 }
 
 .walked .col-md-6 p {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 42px;
+  line-height: 60px;
 }
 
 .walked .col-md-6 p span {
@@ -308,15 +314,15 @@ header h2 {
 
 .vetting h2 {
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   text-align: center;
-  font-size: 50px;
+  font-size: 56px;
 }
 
 .vetting p {
   margin: auto 50px;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 38px;
+  line-height: 50px;
 }
 
 .vetting p span {
@@ -324,21 +330,21 @@ header h2 {
 }
 
 .vetting img {
-  width: 300px;
-  margin: 50px auto 50px auto;
+  width: 50%;
+  margin: 100px auto 50px auto;
 }
 
 .banner {
   background: url("../assets/images/article-section-4.png");
   background-size: cover;
   background-position: center;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 
 .banner h3 {
   font-family: "IBM Plex Serif", serif;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 62px;
 }
 
 .walk-through {
@@ -349,13 +355,13 @@ header h2 {
 
 .walk-through .col-md-6 h1 {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 56px;
   margin-bottom: 20px;
 }
 
 .walk-through .col-md-6 p {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 38px;
+  line-height: 60px;
 }
 
 .walk-through .col-md-6 p span {
@@ -378,13 +384,14 @@ header h2 {
 .bridge-banner h3 {
   font-family: "IBM Plex Serif", serif;
   font-style: italic;
-  font-size: 50px;
+  font-size: 63px;
+  margin-bottom: 20px;
 }
 
 .bridge-banner p {
-  width: 50%;
-  font-size: 28px;
-  line-height: 40px;
+  width: 70%;
+  font-size: 48px;
+  line-height: 70px;
 }
 
 .intro {
@@ -404,18 +411,18 @@ header h2 {
 }
 
 .intro .col-md-7 h2 {
-  font-size: 28px;
+  font-size: 50px;
 }
 
 .intro .col-md-7 h1 {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 56px;
   margin: 40px 0;
 }
 
 .intro .col-md-7 p {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 60px;
 }
 
 .bottom-banner {
@@ -426,14 +433,14 @@ header h2 {
 }
 
 .bottom-banner img {
-  width: 400px;
+  width: 700px;
 }
 
 .bottom-banner h2 {
   font-family: "IBM Plex Serif", serif;
   margin: 20px auto 40px auto;
   color: #47433b;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .bottom-banner .row img {
@@ -449,7 +456,7 @@ footer {
 
 footer h2 {
   font-family: "IBM Plex Serif", serif;
-  font-size: 50px;
+  font-size: 56px;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -460,13 +467,13 @@ footer .form-group {
 
 footer label {
   font-family: "IBM Plex Serif", serif;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 footer .form-control {
   border-color: #b3b3b3;
   font-size: 14px;
-  padding: 10px;
+  padding: 30px 12px;
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -491,25 +498,104 @@ footer textarea {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1200px) {
-  p {
-    font-size: 20px;
-    line-height: 30px;
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1500px !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1140px !important;
+  }
+  .articles .col-md-6 img {
+    width: 100%;
   }
   .articles .col-md-6 h2 {
-    font-size: 22px;
+    font-size: 28px;
   }
-  .connecting h2 {
-    font-size: 32px;
+  .articles .col-md-6 h1 {
+    font-size: 36px;
+  }
+  .articles .col-md-6 p {
+    font-size: 28px;
     line-height: 35px;
   }
-  .categories .col-md-6 .category-card {
-    font-size: 18px;
-    line-height: 30px;
+  .connecting h2 {
+    font-size: 36px;
+    line-height: 40px;
   }
-  .intro {
-    font-size: 18px;
-    line-height: 30px;
+  .connecting .col-md-4 .connecting-card h2 {
+    font-size: 36px;
+  }
+  .connecting .col-md-4 .connecting-card p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .categories .col-md-6 h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .categories .col-md-6 .category-card h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .categories .col-md-6 .category-card p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .walked .col-md-6 h2 {
+    font-size: 36px;
+  }
+  .walked .col-md-6 p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .vetting h2 {
+    font-size: 36px;
+  }
+  .vetting p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .walk-through .col-md-6 h1 {
+    font-size: 36px;
+  }
+  .walk-through .col-md-6 p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .bridge-banner h3 {
+    font-size: 50px;
+  }
+  .bridge-banner p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .intro .col-md-7 h2 {
+    font-size: 28px;
+  }
+  .intro .col-md-7 h1 {
+    font-size: 36px;
+  }
+  .intro .col-md-7 p {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .bottom-banner img {
+    width: 500px;
+  }
+  .bottom-banner h2 {
+    font-size: 50px;
+  }
+  footer h2 {
+    font-size: 36px;
+  }
+  footer label {
+    font-size: 28px;
+  }
+  footer .form-control {
+    padding: 15px 12px;
   }
 }
 
@@ -535,9 +621,6 @@ footer textarea {
   .articles .col-md-6 p {
     font-size: 20px;
     line-height: 35px;
-  }
-  .articles .col-md-6 img {
-    width: 300px;
   }
   .connecting h2 {
     font-size: 36px;
@@ -604,10 +687,14 @@ footer textarea {
     font-size: 36px;
   }
   .banner {
-    font-size: 36px;
+    height: 70vh;
+    padding-bottom: 60px;
+  }
+  .banner h3 {
+    font-size: 40px;
   }
   footer h2 {
-    font-size: 22px;
+    font-size: 36px;
   }
   footer .form-control label {
     font-size: 18px;
@@ -753,6 +840,9 @@ footer textarea {
     margin: 10px 10px;
     display: block;
   }
+  footer {
+    padding: 0 2rem;
+  }
 }
 
 @media (max-width: 501px) {
@@ -761,6 +851,15 @@ footer textarea {
   }
   .apps .col-md-5 img {
     width: 90%;
+  }
+  .bridge-banner {
+    height: 60vh;
+  }
+  .banner {
+    height: 50vh;
+  }
+  .banner h3 {
+    font-size: 36px;
   }
   .bottom-banner {
     padding: 3rem 0;
